@@ -159,12 +159,12 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 120%;
-    margin: 0 auto;
+    margin: 0 auto 24px auto;
     text-align: center;
 }
 
 .questions__list{
-    margin: 24px 0;
+    margin: 0;
     list-style: none;
     padding: 0;
     display: grid;
@@ -214,12 +214,43 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
-.absol{
-    position: relative;
+.reference{
+    margin: 80px auto;
 }
 
+.reference__block{
+    list-style: none;
+}
+
+.reference__list{
+    width: 948px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px 20px 24px;
+    background-color: #FFFFFF;
+    margin: 0 auto 12px auto;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.reference__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.reference__card-subtitle{
+    margin: 4px 0 0 0;
+}
+
+.reference__but{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1076px) {
     .network{
