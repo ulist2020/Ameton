@@ -11,11 +11,13 @@ $(document).ready(function() {
  });
 
 function nextSlide() {
+    console.log(slideNow)
     if (slideNow == slideCount || slideNow <= 0 || slideNow > 4) {
         $('.questions__card').css('transform', 'translate(0, 0)');
         slideNow = 1;
+        
     } else {
-        translateWidth = (-$('.questions__card').width() * (slideNow)) - gap;
+        translateWidth = (-$('.questions__card').width()-gap) * (slideNow);
         $('.questions__card').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',

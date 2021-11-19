@@ -4,7 +4,7 @@
     position: relative;
     font-family: 'Museo Sans Cyrl', Arial, sans-serif;
     color: #1A1A1A;
-    background-color: #FFFFFF;
+    background-color: #8d1d1d;
     margin: 0 auto;
     max-width: 1280px;
     -moz-osx-font-smoothing: grayscale;
@@ -134,6 +134,7 @@
 .network__lists{
     list-style: none;
     display: flex;
+    justify-content: center;
     padding: 0 0 0 46px;
     flex-wrap: wrap;
 }
@@ -148,11 +149,9 @@
 .questions{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* flex-wrap: nowrap; */
-    /* height: 250px;*/
     overflow: hidden; 
     margin: 0 40px;
+    position: relative;
 }
 
 .questions__title{
@@ -161,12 +160,10 @@
     font-size: 40px;
     line-height: 120%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .questions__list{
-    /* display: flex;
-    justify-content: left; */
-        /* flex-wrap: wrap;*/
     margin: 24px 0;
     list-style: none;
     padding: 0;
@@ -175,7 +172,6 @@
     gap: 24px;
     position: relative;
      width: calc(100%*2); 
-    /* float: left;  */
 }
 
 .questions__card{
@@ -186,10 +182,11 @@
     border-radius: 16px;
     margin: 8px 0 0 0;
     display: flex;
+    text-decoration: none;
 }
 
 .questions__text{
-    margin: 16px auto auto 16px;
+    margin: 16px;
 }
 
 .questions__card-title{
@@ -198,13 +195,14 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
+    color: #1A1A1A;
 }
 
 .questions__card-subtitle{
-    margin: 8px 16px 0 0;
+    margin: 8px 0 0 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 140%;
     color: #949494;
 }
@@ -212,9 +210,10 @@
 .questions__but{
     position: absolute;
     right: 0;
-    top: 37%;
+    top: 50%;
     border: none;
     background-color: transparent;
+    padding: 0;
 }
 
 .absol{
@@ -227,23 +226,32 @@
         width: auto;
         margin: 82px 40px 40px 40px;
     }
-    
+
+    .questions__card {
+        width: 299px;
+    }
 }
 
-@media screen and (max-width: 980px){
+@media screen  and (max-width: 980px){
     .banner__arm{
         display: none;
     }
+
     .network__lists {
         padding: 0;
     }
+
+    .questions__card {
+        width: calc(50vw - 52px);
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 601px) and (max-width: 768px){
     .banner{
         height: auto;
         margin: 15px;
     }
+
     .banner__telegram{
         display: none;
     }
@@ -262,6 +270,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .network__title{
         margin-top: 15px;    
     }
@@ -270,10 +279,113 @@
         font-size: 25px;
     }
 
+    .questions__title{
+        font-size: 30px;
     }
 
-@media screen and (max-width: 375px) {
+    .questions__list{
+        margin: 14px 0;
+    }
+
+    .questions__card {
+        width: calc(50vw - 52px);
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px){
+    .banner{
+        height: auto;
+        margin: 15px;
+    }
+
+    .banner__telegram{
+        display: none;
+    }
+
     .banner__title{
         font-size: 40px;
+    }
+
+    .banner__subtitle{
+        width: auto;
+    }
+
+    .network{
+        height: auto;
+        margin: 15px;
+    }
+
+    .network__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .network__title{
+        margin-top: 15px;    
+    }
+
+    .network__subtitle{
+        font-size: 25px;
+    }
+
+    .questions__title{
+        font-size: 30px;
+    }
+
+    .questions__list{
+        margin: 14px 0;
+    }
+
+    .questions__card {
+        width: calc(100vw - 80px);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner{
+        height: auto;
+        margin: 15px;
+    }
+    .banner__telegram{
+        display: none;
+    }
+    .banner__title{
+        font-size: 40px;
+    }
+
+    .banner__subtitle{
+        width: auto;
+    }
+
+    .network{
+        height: auto;
+        margin: 15px;
+    }
+
+    .network__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .network__title{
+        margin-top: 15px;    
+    }
+
+    .network__subtitle{
+        font-size: 25px;
+    }
+
+    .questions__title{
+        font-size: 30px;
+    }
+
+    .questions__list{
+        margin: 14px 0;
+    }
+
+    .questions__card {
+        width: calc(100vw - 80px);
     }
 }
