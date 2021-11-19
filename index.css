@@ -4,7 +4,7 @@
     position: relative;
     font-family: 'Museo Sans Cyrl', Arial, sans-serif;
     color: #1A1A1A;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
     margin: 0 auto;
     max-width: 1280px;
     -moz-osx-font-smoothing: grayscale;
@@ -105,7 +105,7 @@
 .network{
     width: 996px;
     height: 166px;
-    margin: 82px auto 40px auto;
+    margin: 82px auto 80px auto;
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
     border-radius: 40px;
@@ -142,7 +142,85 @@
     width: 56px;
     height: 56px;
     margin-left: 14px;
+    cursor: pointer;
 }
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+    /* height: 250px;*/
+    overflow: hidden; 
+    margin: 0 40px;
+}
+
+.questions__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 0 auto;
+}
+
+.questions__list{
+    /* display: flex;
+    justify-content: left; */
+        /* flex-wrap: wrap;*/
+    margin: 24px 0;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 24px;
+    position: relative;
+     width: calc(100%*2); 
+    /* float: left;  */
+}
+
+.questions__card{
+    width: 282px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    margin: 8px 0 0 0;
+    display: flex;
+}
+
+.questions__text{
+    margin: 16px auto auto 16px;
+}
+
+.questions__card-title{
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.questions__card-subtitle{
+    margin: 8px 16px 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 140%;
+    color: #949494;
+}
+
+.questions__but{
+    position: absolute;
+    right: 0;
+    top: 37%;
+    border: none;
+    background-color: transparent;
+}
+
+.absol{
+    position: relative;
+}
+
 
 @media screen and (max-width: 1076px) {
     .network{
