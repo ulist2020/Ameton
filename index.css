@@ -88,7 +88,7 @@
     border-radius: 12px;    
     text-align: center;
     line-height: 300%;
-    margin: 8px 8px 0 0;
+    margin: 8px 4px 0 4px;
     border: none;
     cursor: pointer;
 }
@@ -204,6 +204,7 @@
     font-size: 14px;
     line-height: 140%;
     color: #949494;
+    max-width: 345px;
 }
 
 .questions__but{
@@ -313,7 +314,7 @@
 .delivery__phone{
     width: 48px;
     height: 48px;
-    margin: 0 8px;
+    margin: 0 0 0 8px;
 }
 
 
@@ -390,9 +391,11 @@
     .questions__card {
         width: calc(50vw - 52px);
     }
+
     .questions__but {
         top: 50%;
     }
+
     .reference{
         margin: 15px;
     }
@@ -434,6 +437,7 @@
     .network__subtitle{
         font-size: 25px;
     }
+
     .questions{
         margin: 0 15px;
     }
@@ -446,8 +450,13 @@
     .questions__card {
         width: calc(100vw - 30px);
     }
+
     .reference{
         margin: 15px;
+    }
+
+    .delivery {
+        margin: 20px 20px 20px 20px;
     }
 }
 
@@ -456,9 +465,11 @@
         height: auto;
         margin: 15px;
     }
+
     .banner__telegram{
         display: none;
     }
+
     .banner__title{
         font-size: 40px;
     }
@@ -485,6 +496,7 @@
     .network__subtitle{
         font-size: 25px;
     }
+
     .questions{
         margin: 0 15px;
     }
@@ -497,10 +509,20 @@
     .questions__card {
         width: calc(100vw - 30px);
     }
+
     .questions__but {
         top: 55%;
     }
+
     .reference{
         margin: 15px;
+    }
+
+    .delivery {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .delivery__chat {
+        width: 154px;
     }
 }
