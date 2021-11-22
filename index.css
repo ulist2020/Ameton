@@ -204,7 +204,7 @@
     font-size: 14px;
     line-height: 140%;
     color: #949494;
-    max-width: 445px;
+    max-width: 345px;
 }
 
 .questions__but{
@@ -245,6 +245,7 @@
 
 .reference__card-subtitle{
     margin: 4px 0 0 0;
+    max-width: 445px;
 }
 
 .reference__but{
